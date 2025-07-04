@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aditya Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(10, 10, 55);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(8, 8, 84);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(146, 146, 241);
+            font-size: 1.02rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 135px 0;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 35%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .rightSection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(158, 100, 212);
+        }
+
+        #element {
+            color: rgb(158, 100, 212);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .textgrey {
+            color: grey;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 75vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+
+        .image-top {
+            width: 40px;
+            position: relative;
+            top: -45px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: grey;
+            width: 150px;
+            font-size: 10px;
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 2rem;
+            margin: 40px 0 20px 0;
+            color: #9c97f1;
+        }
+
+        .qualification-container {
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 90%;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .qualification-item {
+            background-color: rgba(255, 255, 255, 0.05);
+            border: 1px solid #9c97f1;
+            border-radius: 12px;
+            padding: 20px;
+            width: 300px;
+            color: white;
+            box-shadow: 0 0 10px rgba(156, 151, 241, 0.3);
+        }
+
+        .qualification-item h2 {
+            font-size: 1.2rem;
+            color: #bdafff;
+            margin-bottom: 10px;
+        }
+
+        .qualification-item p {
+            font-size: 0.9rem;
+            margin: 6px 0;
+        }
+
+        @media (max-width: 768px) {
+            .qualification-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .qualification-item {
+                width: 90%;
+            }
+        }
+
+
+        footer {
+            background-color: rgb(4, 3, 10);
+            height: 425px;
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 240px;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #e1306c;
+            color: white;
+        }
+
+        .fa:hover {
+            opacity: 0.9;
+        }
+
+        .fa {
+            padding: 20px;
+            font-size: 40px;
+            width: 60px;
+            text-decoration: none;
+            margin: 5px 80px;
+        }
+
+        .footer-third form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .footer-third input,
+        .footer-third textarea {
+            margin: 8px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-third button {
+            padding: 10px;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .footer-third button:hover {
+            background-color: #5548d9;
+        }
+
+        .projectsSection {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .projects-container {
+            margin-top: 20px;
+        }
+
+        .stay-tuned {
+            font-size: 1.1rem;
+            color: #ccc;
+            background-color: rgba(255, 255, 255, 0.05);
+            display: inline-block;
+            padding: 15px 25px;
+            border-radius: 12px;
+            border: 1px dashed #9c97f1;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.02);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Welcome,</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#qualification">Qualification</a></li>
+                    <li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="home">
+        <section class="firstSection">
+            <div class="leftSection">Hi, My name is <span class="purple">Aditya</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection" id="certifications">
+            <span class="textgrey">What I have done so far</span>
+            <h1>Skills and Certifications</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="AIf.png" class="image-top">
+                    <div class="vertical-title">AI Fundamentals - IBM SkillsBuild</div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li> Gained foundational knowledge of Artificial Intelligence concepts including machine
+                                learning, deep learning, neural networks, and natural language processing (NLP).</li>
+                            <li>Understood ethical considerations, data bias, and responsible AI practices.</li>
+                            <li>Developed hands-on experience through interactive labs and case studies using IBM Watson
+                                tools and AI frameworks.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="Embedded.png" class="image-top">
+                    <div class="vertical-title">Embedded Systems using Arduino UNO and ESP8266</div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li> Gained practical experience in designing and developing embedded systems using Arduino
+                                Uno and ESP8266 Wi-Fi module.</li>
+                            <li>Implemented real-time data acquisition, sensor integration (e.g., temperature,
+                                humidity), and actuator control.</li>
+                            <li>Developed IoT-based applications including remote monitoring and control using Wi-Fi
+                                connectivity and Blynk platform.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="Dataf.png" class="image-top">
+                    <div class="vertical-title">Data Fundamentals - IBM SkillsBuild</div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li> Acquired a strong foundation in data concepts including types of data, data formats,
+                                and data lifecycle</li>
+                            <li>Learned key principles of data collection, cleaning, storage, and visualization.</li>
+                            <li>Explored relational databases, basic SQL queries, and data-driven decision making.</li>
+                            <li>Gained insight into data roles such as data analyst, data engineer, and data scientist,
+                                along with ethical use of data.</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+                <div class="vertical">
+                    <img src="python.png" class="image-top">
+                    <div class="vertical-title">Python</div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li> Gained proficiency in Python programming, covering core concepts such as variables,
+                                data types, control structures, functions.</li>
+                            <li>Developed hands-on experience with libraries like NumPy, pandas, and matplotlib for data
+                                analysis and visualization.</li>
+                            <li>Built basic projects involving data manipulation.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img src="sql.png" class="image-top">
+                    <div class="vertical-title">SQL</div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li> Learned essential SQL concepts including database schema, tables, relationships, and
+                                normalization.</li>
+                            <li>Gained hands-on experience writing SQL queries for data extraction, filtering, sorting,
+                                and aggregation using SELECT, WHERE, GROUP BY, HAVING, and ORDER BY clauses.</li>
+                            <li>Performed data updates and modifications using INSERT, UPDATE, and DELETE statements.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <hr>
+        <section id="qualification" class="qualificationSection">
+            <h1 class="section-heading">My Qualification</h1>
+            <div class="qualification-container">
+                <div class="qualification-item">
+                    <h2>Bachelor of Technology (B.Tech)</h2>
+                    <p><strong>Branch:</strong> Electronics and Communication Engineering</p>
+                    <p><strong>Institute:</strong> Birla Institute of Technology, Mesra</p>
+                    <p><strong>Year:</strong> 2024 (Ongoing)</p>
+                    <p><strong>CGPA:</strong> 8.43</p>
+                </div>
+                <div class="qualification-item">
+                    <h2>Higher Secondary (12th)</h2>
+                    <p><strong>Board:</strong> CBSE</p>
+                    <p><strong>School:</strong> Delhi Public School, Bokaro</p>
+                    <p><strong>Year of Passing:</strong> 2023</p>
+                    <p><strong>Percentage:</strong> 86%</p>
+                </div>
+                <div class="qualification-item">
+                    <h2>Secondary (10th)</h2>
+                    <p><strong>Board:</strong> CBSE</p>
+                    <p><strong>School:</strong> DAV Centenary Public School, Siwan</p>
+                    <p><strong>Year:</strong> 2021</p>
+                    <p><strong>Percentage:</strong> 90.4%</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="projects" class="projectsSection">
+            <h1 class="section-heading">Projects</h1>
+            <div class="projects-container">
+                <p class="stay-tuned">🚧 Stay tuned! Exciting projects will be added here soon. 🚀</p>
+            </div>
+        </section>
+
+
+    </main>
+
+    <footer id="contact">
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aditya's Developer Portfolio</h3>
+                <p>ECE Undergrad at BIT Mesra</p>
+                <p>Email: adi.raj200401@gmail.com</p>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/adityaraj-bit/" target="_blank" aria-label="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/adityar_a_j_?igsh=MTZicm1qejZmMWg4MQ==" target="_blank"
+                            aria-label="Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Contact Form</h3>
+                <form id="contact-form">
+                    <input type="text" name="user_name" placeholder="Your Name" required><br>
+                    <input type="email" name="user_email" placeholder="Your Email" required><br>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+                <p id="form-message" style="color: lightgreen; font-size: 0.9rem;"></p>
+            </div>
+
+
+        </div>
+    </footer>
+    <footer style="background-color: #000000; text-align: center; height:30px; Arial, sans-serif;">
+  <p>&copy; 2025 Aditya Raj. All rights reserved.</p>
+</footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['ECE Undergrad', 'Web Developer', 'Python Programmer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("7VLNJvTlcdJyFNN1L"); // Replace with your EmailJS Public Key
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_cbrz4v8', 'template_jw1ly9v', this)
+                .then(function () {
+                    document.getElementById('form-message').innerText = "Message sent successfully!";
+                    document.getElementById('contact-form').reset();
+                }, function (error) {
+                    document.getElementById('form-message').innerText = "Failed to send message.";
+                    console.error('FAILED...', error);
+                });
+        });
+    </script>
+
+</body>
+
+</html>
