@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aditya's Certifications</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Arial, sans-serif;
+            /*background: #f5f6fa;*/
+            background: rgb(10, 10, 55);
+            color: #22313F;
+        }
+
+        header {
+            background: #06061d;
+            color: #fff;
+            padding: 24px;
+            text-align: center;
+        }
+
+        nav {
+            background: #1a0a5384;
+            padding: 16px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 18px;
+            font-weight: bold;
+        }
+
+        .cert-table {
+            width: 90%;
+            max-width: 1000px;
+            margin: 30px auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 2px 12px rgba(34, 49, 63, 0.08);
+            border-collapse: collapse;
+            overflow: hidden;
+        }
+
+        .cert-table th,
+        .cert-table td {
+            padding: 15px 10px;
+            text-align: left;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .cert-table th {
+            /*background: #3B5998;*/
+            background: #06080c;
+            color: #fff;
+        }
+
+        .cert-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .skills {
+            font-size: 0.93em;
+            color: #000000;
+        }
+
+        .show-link {
+            color: #2980b9;
+            text-decoration: ;
+            font-size: 0.94em;
+        }
+
+        .credential-btn {
+            display: inline-block;
+            background: #2980b9;
+            /* Button color */
+            color: #fff;
+            /* Text color */
+            padding: 8px 16px;
+            border-radius: 6px;
+            /* Rounded corners */
+            text-decoration: none;
+            /* Remove underline */
+            font-size: 0.97em;
+            font-weight: 500;
+            text-align: center;
+            line-height: 1.2;
+            box-shadow: 0 2px 4px rgba(41, 128, 185, 0.08);
+            transition: background 0.2s;
+            margin: 4px 0;
+        }
+
+        .credential-btn:hover {
+            background: #186098;
+            /* Darker blue on hover */
+        }
+
+        footer {
+            background-color: rgb(4, 3, 10);
+            padding: 30px 10px;
+            text-align: center;
+        }
+
+        .footer {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .footer ul {
+            list-style: none;
+            display: flex;
+            gap: 10px;
+            padding: 0;
+        }
+
+        .fa {
+            padding: 15px;
+            font-size: 30px;
+            width: 45px;
+            text-decoration: none;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #e1306c;
+            color: white;
+        }
+
+        .fa:hover {
+            opacity: 0.9;
+        }
+
+        .footer-third form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 400px;
+            margin: auto;
+        }
+
+        .footer-third input,
+        .footer-third textarea {
+            margin: 8px 0;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .footer-third button {
+            padding: 10px;
+            background-color: #6c63ff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .footer-third button:hover {
+            background-color: #5548d9;
+        }
+
+        .colored-text {
+            color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Certifications</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="certifications.html">Certifications</a>
+        <!-- Add more links as needed -->
+    </nav>
+    <main>
+        <table class="cert-table">
+            <tr>
+                <th>Certification</th>
+                <th>Provider</th>
+                <th>Issued</th>
+                <th>Skills</th>
+                <th>Credential</th>
+            </tr>
+            <tr>
+                <td>Accenture North America - Project Management Job Simulation</td>
+                <td>Forage</td>
+                <td>May 2025</td>
+                <td class="skills">Project Management, Presentations, Communication</td>
+                <td><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/T6kdcdKSTfg2aotxT/tHFz7Bfjmh35DXQv6_T6kdcdKSTfg2aotxT_dmCQ9Knms5h99wqQ7_1748065801369_completion_certificate.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Artificial Intelligence Fundamentals</td>
+                <td>IBM</td>
+                <td>Jun 2025</td>
+                <td class="skills">Artificial Intelligence (AI)</td>
+                <td><a href="Certificate/IBM AI Fundamentals Certificate.pdf" target="_blank"
+                        class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Atlassian IT Service Management (ITSM) Professional Certificate</td>
+                <td>Atlassian</td>
+                <td>Jul 2025</td>
+                <td class="skills">Change Management, IT Service Management, IT Management Monitoring</td>
+                <td><a href="Certificate/ITSM Certificate.pdf" target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>AWS APAC - Solutions Architecture Job Simulation</td>
+                <td>Forage</td>
+                <td>May 2025</td>
+                <td class="skills"></td>
+                <td><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_dmCQ9Knms5h99wqQ7_1747735919467_completion_certificate.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>BCG - GenAI Job Simulation</td>
+                <td>Forage</td>
+                <td>Jun 2025</td>
+                <td class="skills">Microsoft Excel, Python</td>
+                <td><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/SKZxezskWgmFjRvj9/gabev3vXhuACr48eb_SKZxezskWgmFjRvj9_dmCQ9Knms5h99wqQ7_1749363732328_completion_certificate.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Deloitte Australia - Data Analytics Job Simulation</td>
+                <td>Forage</td>
+                <td>May 2025</td>
+                <td class="skills">Tableau, Spreadsheets, Data Analysis</td>
+                <td><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/io9DzWKe3PTsiS6GG_9PBTqmSxAf6zZTseP_dmCQ9Knms5h99wqQ7_1747851169884_completion_certificate.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Deloitte Australia - Technology Job Simulation</td>
+                <td>Forage</td>
+                <td>Jun 2025</td>
+                <td class="skills"></td>
+                <td><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/9PBTqmSxAf6zZTseP/udmxiyHeqYQLkTPvf_9PBTqmSxAf6zZTseP_dmCQ9Knms5h99wqQ7_1750655645885_completion_certificate.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Data Fundamentals</td>
+                <td>IBM</td>
+                <td>Jul 2025</td>
+                <td class="skills">Data Science, Data Analysis</td>
+                <td><a href="Certificate/Data Fundamentals.pdf" target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Databases For Developers: Foundations</td>
+                <td>Oracle</td>
+                <td>Jun 2025</td>
+                <td class="skills">SQL</td>
+                <td><a href="Certificate/dynamicclasscertificate.pdf" target="_blank" class="credential-btn">View</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Embedded System with Arduino</td>
+                <td>GeeksforGeeks</td>
+                <td>Jun 2025</td>
+                <td class="skills">Arduino Programming</td>
+                <td><a href="https://media.geeksforgeeks.org/courses/certificates/a8e1811bc71f6d6420f7e10403df3316.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>HP LIFE Data Science & Analytics</td>
+                <td>HP LIFE</td>
+                <td>May 2025</td>
+                <td class="skills"></td>
+                <td><a href="https://www.life-global.org/certificate/94be7536-3b53-462e-b482-fbaf6bd7a8b5"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>HTML & CSS Bootcamp</td>
+                <td>LetsUpgrade</td>
+                <td>Jul 2025</td>
+                <td class="skills">HTML, Cascading Style Sheets (CSS)</td>
+                <td><a href="Certificate/LUEHTMLJUL125463.pdf" target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Journey to Cloud: Envisioning Your Solution</td>
+                <td>IBM</td>
+                <td>Jul 2025</td>
+                <td class="skills"></td>
+                <td><a href="Certificate/Journey to Cloud.pdf" target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Mastering Generative AI and ChatGPT</td>
+                <td>GeeksforGeeks</td>
+                <td>Jun 2025</td>
+                <td class="skills"></td>
+                <td><a href="https://www.geeksforgeeks.org/certificate/355a6aa629176cc940f82beba6fe7bcc?utm_source=socials&utm_medium=cc_link"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Microsoft Azure AI Essentials Professional Certificate</td>
+                <td>Microsoft</td>
+                <td>Jul 2025</td>
+                <td class="skills">NLP, Machine Learning, Azure AI Studio, Microsoft Azure, Generative AI</td>
+                <td><a href="Certificate/Microsoft Azure AI Essentials Professional Certificate.pdf" target="_blank"
+                        class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Python Programming</td>
+                <td>Reliance Foundation</td>
+                <td>Jun 2025</td>
+                <td class="skills">Python</td>
+                <td><a href="Certificate/python.pdf" target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>SQL Bootcamp</td>
+                <td>LetsUpgrade</td>
+                <td>Jul 2025</td>
+                <td class="skills"></td>
+                <td><a href="Certificate/LUESQLJUN125607.pdf" target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Tata Group - Cybersecurity Analyst Job Simulation</td>
+                <td>Forage</td>
+                <td>May 2025</td>
+                <td class="skills"></td>
+                <td><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/gmf3ypEXBj2wvfQWC_ifobHAoMjQs9s6bKS_dmCQ9Knms5h99wqQ7_1747735042241_completion_certificate.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Tata Group - Data Visualisation: Empowering Business with Effective Insights Job Simulation</td>
+                <td>Forage</td>
+                <td>May 2025</td>
+                <td class="skills">Visualization, Charts and Graphs, Data Analysis</td>
+                <td><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/MyXvBcppsW2FkNYCX_ifobHAoMjQs9s6bKS_dmCQ9Knms5h99wqQ7_1748179143900_completion_certificate.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+
+            </tr>
+            <tr>
+                <td>Tata Group - ESG Job Simulation</td>
+                <td>Forage</td>
+                <td>May 2025</td>
+                <td class="skills"></td>
+                <td><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/ifobHAoMjQs9s6bKS/N8Muuhk6XsXgMTeu2_ifobHAoMjQs9s6bKS_dmCQ9Knms5h99wqQ7_1748007308474_completion_certificate.pdf"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>TCS iON Career Edge - Young Professional</td>
+                <td>TCS iON</td>
+                <td>May 2025</td>
+                <td class="skills">Accounting Fundamentals, Business Etiquette, IT Foundational Skills, Soft Skills</td>
+                <td><a href="Certificate/Aditya_Raj_4822296.pdf" target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Web Design & Development</td>
+                <td>NSDC</td>
+                <td>Jun 2025</td>
+                <td class="skills">Web Design, Web Development</td>
+                <td><a href="https://skill-india-dev.s3.ap-south-1.amazonaws.com/certificate_generic/uploaded_elements/2025060198574452/certificate_0e985123-f259-488a-9a41-a316980ea081.pdf?response-content-disposition=inline&response-content-type=application%2Fpdf&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250720T171049Z&X-Amz-SignedHeaders=host&X-Amz-Expires=2000&X-Amz-Credential=AKIA3OJCFBJTPLAN4OGU%2F20250720%2Fap-south-1%2Fs3%2Faws4_request&X-Amz-Signature=7c3fa170afa9a46471012c7544aec2ae4fa8b9e80fd58991e76945025d85c49f"
+                        target="_blank" class="credential-btn">View</a></td>
+            </tr>
+            <tr>
+                <td>Architecture and Industrial applications of ESP 8266 MC</td>
+                <td>L&T EduTech</td>
+                <td></td>
+                <td class="skills">ESP8266</td>
+                <td><a href="certificates/Architecture and Industrial applications of ESP 8266 MC.png" target="_blank"
+                        class="credential-btn">View</a></td>
+            </tr>
+        </table>
+    </main>
+    <footer id="contact" class="colored-text">
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Aditya Raj</h3>
+                <p>ECE Undergrad at BIT Mesra</p>
+                <p>Email: adi.raj200401@gmail.com</p>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/adityaraj-bit/" target="_blank" aria-label="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/adityar_a_j_?igsh=MTZicm1qejZmMWg4MQ==" target="_blank"
+                            aria-label="Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <h3>Contact Form</h3>
+                <form id="contact-form">
+                    <input type="text" name="user_name" placeholder="Your Name" required><br>
+                    <input type="email" name="user_email" placeholder="Your Email" required><br>
+                    <textarea name="message" rows="4" placeholder="Your Message" required></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+                <p id="form-message" style="color: lightgreen; font-size: 0.9rem;"></p>
+            </div>
+
+
+        </div>
+    </footer>
+    <footer class="colored-text" style="background-color: #000000; text-align: center; height:30px; Arial, sans-serif;">
+        <p>&copy; 2025 Aditya Raj. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['ECE Undergrad', 'Web Developer', 'Python Programmer'],
+            typeSpeed: 50,
+        });
+</body >
+
+</html >
