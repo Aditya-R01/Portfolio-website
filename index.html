@@ -212,7 +212,7 @@
         .fa {
             padding: 15px;
             font-size: 30px;
-            width: 45px;
+            width: auto;
             text-decoration: none;
         }
 
@@ -252,7 +252,7 @@
         }
 
         .projectsSection {
-            padding: 40px 20px;
+            padding: px 20px;
             text-align: center;
         }
 
@@ -265,6 +265,19 @@
             border-radius: 12px;
             border: 1px dashed #9c97f1;
             animation: pulse 2s infinite;
+        }
+        .button-link {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+            display: inline-block;
+        }
+
+        .button-link:hover {
+            background-color: #0056b3;
         }
 
         @keyframes pulse {
@@ -383,7 +396,8 @@
                 </div>
 
             </div>
-
+<div style= "text-align: center;">
+<a href="Certificate/certifications.html" class="button-link" >Click to View More</a></div>
         </section>
 
         <hr>
@@ -417,8 +431,25 @@
         <hr>
         <section id="projects" class="projectsSection">
             <h1 class="section-heading">Projects</h1>
-            <div class="projects-container">
-                <p class="stay-tuned">🚧 Stay tuned! Exciting projects will be added here soon. 🚀</p>
+            <div class="qualification-container">
+                <div class="qualification-item">
+                    <h2>Employee Salary Predictor</h2>
+                    <p>An AI tool that predict Salary using various input features.</p>
+                    <p>Random Forest Regression</p>
+                    <a href="emp.html" class="button-link">Click to View</a>
+                </div>
+                <div class="qualification-item">
+                    <h2>Arduino UNO</h2>
+                    <p>Projects built using Arduino UNO Board</p>
+                    <p>Programmed in C++ using Arduino IDE</p>
+                    <a href="uno.html" class="button-link">Click to View</a>
+                </div>
+                <div class="qualification-item">
+                    <h2>ESP8266 NodeMCU</h2>
+                    <p>Projects built using ESP8266 NodeMCU Board</p>
+                    <p>Programmed in C++ using Arduino IDE</p>
+                    <a href="esp8266.html" class="button-link">Click to View</a>
+                </div>
             </div>
         </section>
 
