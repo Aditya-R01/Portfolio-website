@@ -414,6 +414,26 @@
             strings: ['ECE Undergrad', 'Web Developer', 'Python Programmer'],
             typeSpeed: 50,
         });
+
+        <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("7VLNJvTlcdJyFNN1L"); // Replace with your EmailJS Public Key
+        })();
+
+        document.getElementById('contact-form').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            emailjs.sendForm('service_cbrz4v8', 'template_qjusric', this)
+                .then(function () {
+                    document.getElementById('form-message').innerText = "Message sent successfully!";
+                    document.getElementById('contact-form').reset();
+                }, function (error) {
+                    document.getElementById('form-message').innerText = "Failed to send message.";
+                    console.error('FAILED...', error);
+                });
+        });
+    </script>
 </body >
 
 </html >
